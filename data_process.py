@@ -95,7 +95,7 @@ def data_process(df, outfile, tokenize_strategy):
                 seg_list = seg_list
                 
             # 去除停用词
-            content = [x for x in seg_list if x not in stop_words('stop_words.txt')]
+            content = [x for x in seg_list if x not in stop_words('./conf/stop_words.txt')]
             dict1['doc_token'] = content
             dict1['doc_keyword'] = []
             dict1['doc_topic'] = []
